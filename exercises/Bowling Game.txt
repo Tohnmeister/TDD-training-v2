@@ -1,0 +1,9 @@
+A gutter game should result in 0
+
+All ones should result in 20
+
+A spare should count next throw double
+
+A strike should count next two throws double
+
+A perfect game should result in 300
