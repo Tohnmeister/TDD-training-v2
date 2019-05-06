@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace _02_photosearcher
+namespace _03_PhotoSearcher
 {
     public interface IPhotoRepository
     {

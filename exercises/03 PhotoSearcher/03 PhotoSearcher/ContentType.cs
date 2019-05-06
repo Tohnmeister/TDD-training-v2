@@ -1,4 +1,4 @@
-﻿namespace _02_photosearcher
+﻿namespace _03_PhotoSearcher
 {
     public enum ContentType
     {

@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <RootNamespace>_02_photosearcher</RootNamespace>
+    <RootNamespace>_03_PhotoSearcher</RootNamespace>
   </PropertyGroup>
 
 </Project>
