@@ -2,7 +2,18 @@
 
 namespace _04_CruiseControl
 {
-    class Hardware
+    public interface IHardware
+    {
+        void Accelerate(bool accelerate);
+        int GetCurrentSpeed();
+        bool IsBrakePressed();
+        bool IsClutchPressed();
+        bool IsCruiseControlOn();
+        void DisableCruiseControl();
+        int GetCruiseControlSpeed();
+    }
+
+    class Hardware : IHardware
     {
         private static Hardware _instance = null;
 
