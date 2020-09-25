@@ -32,7 +32,7 @@ namespace _03_PhotoSearcher.Tests
             photoDeleter.DeletePhotos(new FuzzyDate(FuzzyDate.Quarters.Q1, 2019));
 
             // assert
-            photoRepositoryMock.Verify(r => r.DeletePhotos(new List<int> {1}), Times.Exactly(1));
+            photoRepositoryMock.Verify(r => r.DeletePhotos(new[] {1}), Times.Exactly(1));
         }
 
         [TestMethod]
@@ -49,7 +49,7 @@ namespace _03_PhotoSearcher.Tests
             photoDeleter.DeletePhotos(new FuzzyDate(FuzzyDate.Quarters.Q1, 2019));
 
             // assert
-            photoRepositoryMock.Verify(r => r.DeletePhotos(new List<int> { 1 }), Times.Never);
+            photoRepositoryMock.Verify(r => r.DeletePhotos(new[] { 1 }), Times.Never);
         }
 
         [TestMethod]
@@ -62,7 +62,7 @@ namespace _03_PhotoSearcher.Tests
             photoDeleter.DeletePhotos(new FuzzyDate(FuzzyDate.Quarters.Q1, 2019), new Color(255, 255, 0), ContentType.Cars);
 
             // assert
-            photoRepositoryMock.Verify(r => r.DeletePhotos(new List<int> { 1 }), Times.Exactly(1));
+            photoRepositoryMock.Verify(r => r.DeletePhotos(new[] { 1 }), Times.Exactly(1));
         }
 
         [TestMethod]
@@ -75,7 +75,7 @@ namespace _03_PhotoSearcher.Tests
             photoDeleter.DeletePhotos(new FuzzyDate(FuzzyDate.Quarters.Q1, 2019), new Color(255, 255, 0), ContentType.Cars);
 
             // assert
-            photoRepositoryMock.Verify(r => r.DeletePhotos(new List<int> { 1 }), Times.Never);
+            photoRepositoryMock.Verify(r => r.DeletePhotos(new[] { 1 }), Times.Never);
         }
 
         [TestMethod]
@@ -88,7 +88,7 @@ namespace _03_PhotoSearcher.Tests
             photoDeleter.DeletePhotos(new FuzzyDate(FuzzyDate.Quarters.Q1, 2019), new Color(255, 255, 0), ContentType.Cars);
 
             // assert
-            photoRepositoryMock.Verify(r => r.DeletePhotos(new List<int> { 1 }), Times.Never);
+            photoRepositoryMock.Verify(r => r.DeletePhotos(new[] { 1 }), Times.Never);
         }
 
         [TestMethod]
@@ -101,7 +101,7 @@ namespace _03_PhotoSearcher.Tests
             photoDeleter.DeletePhotos(new FuzzyDate(FuzzyDate.Quarters.Q1, 2019), new Color(255, 255, 0), ContentType.Cars);
 
             // assert
-            photoRepositoryMock.Verify(r => r.DeletePhotos(new List<int> { 1 }), Times.Never);
+            photoRepositoryMock.Verify(r => r.DeletePhotos(new[] { 1 }), Times.Never);
         }
 
 

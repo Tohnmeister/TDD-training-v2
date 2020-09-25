@@ -17,8 +17,7 @@ namespace _03_PhotoSearcher
         {
             var idsToDelete = photoRepository.GetPhotos()
                 .Where(photo => fuzzyDate.Contains(photo.Date))
-                .Select(photo => photo.Id)
-                .ToList();
+                .Select(photo => photo.Id);
 
             photoRepository.DeletePhotos(idsToDelete);
         }
@@ -27,8 +26,7 @@ namespace _03_PhotoSearcher
         {
             var idsToDelete = photoRepository.GetPhotos()
                 .Where(photo => fuzzyDate.Contains(photo.Date) && photo.Color.Equals(color) && photo.ContentType == contentType)
-                .Select(photo => photo.Id)
-                .ToList();
+                .Select(photo => photo.Id);
 
             photoRepository.DeletePhotos(idsToDelete);
         }
