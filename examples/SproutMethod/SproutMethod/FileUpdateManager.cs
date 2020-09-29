@@ -15,31 +15,8 @@ namespace SproutMethod
                     File.AppendAllText(file, textToAppend);
                 }
             }
-            NotifyThatFilesHaveChangedByEmail(filePaths);
-        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        private void NotifyThatFilesHaveChangedByEmail(IList<string> filePath)
-        {
-            // some very complex implementation
+            // TODO: This method needs to be extended so that a list of recipients is mailed with the changed filepaths.
         }
     }
 }
